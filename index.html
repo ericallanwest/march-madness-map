@@ -48,18 +48,17 @@
                     <option value="68">First Four</option>
                     <option value="64">Round of 64</option>
                     <option value="32" selected>Round of 32</option>
-                    <!-- <option value="16">Sweet 16</option> -->
-                    <!-- <option value="8">Elite Eight</option> -->
-                    <!-- <option value="4">Final Four</option> -->
-                    <!-- <option value="2">Championship</option> -->
-                    <!-- <option value="1">Champion</option> -->
-                </select>
+                    </select>
             </div>
             <div>
                 <label for="zipInput"><strong>Find Your Location: </strong></label>
                 <input type="text" id="zipInput" placeholder="Enter US Zip Code" maxlength="5" size="15">
                 <button onclick="findZipCode()">Search</button>
                 <button onclick="resetMap()" class="reset-btn">Reset Map</button>
+            </div>
+            <div>
+                <label for="opacitySlider"><strong>Opacity: </strong></label>
+                <input type="range" id="opacitySlider" min="0" max="1" step="0.1" value="0.8" oninput="updateOpacity(this.value)">
             </div>
         </div>
     </div>
@@ -71,6 +70,15 @@
         var map = L.map('map').setView([39.8283, -98.5795], 4);
         var currentGeoJSONLayer = null;
         var searchMarker = null;
+        var currentOpacity = 0.8; // Track the current opacity level from the slider
+
+        // Function to update layer opacity when the slider moves
+        function updateOpacity(value) {
+            currentOpacity = parseFloat(value);
+            if (currentGeoJSONLayer) {
+                currentGeoJSONLayer.setStyle({ fillOpacity: currentOpacity });
+            }
+        }
 
         // Add a clean, light basemap
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -104,15 +112,9 @@
                         style: function(feature) {
                             return {
                                 fillColor: feature.properties.Hex,
-                                fillOpacity: 0.8,
-                                
-                                // --- Active styling: Clean white borders ---
+                                fillOpacity: currentOpacity, // Linked to the slider variable
                                 color: "#ffffff",
                                 weight: 1.5
-                                
-                                // --- Commented out: Smart border styling ---
-                                // color: feature.properties.Border_Color || "#ffffff",
-                                // weight: feature.properties.Border_Weight || 1.5
                             };
                         },
                         onEachFeature: function(feature, layer) {
@@ -148,8 +150,13 @@
                             
                             // 3. Highlight territory on mouseover
                             layer.on({
-                                mouseover: function(e) { e.target.setStyle({ fillOpacity: 1.0, weight: 3 }); },
-                                mouseout: function(e) { currentGeoJSONLayer.resetStyle(e.target); }
+                                mouseover: function(e) { 
+                                    e.target.setStyle({ fillOpacity: 1.0, weight: 3 }); 
+                                },
+                                mouseout: function(e) { 
+                                    // Snaps back to whatever the slider is currently set to!
+                                    e.target.setStyle({ fillOpacity: currentOpacity, weight: 1.5 }); 
+                                }
                             });
                         }
                     }).addTo(map);
