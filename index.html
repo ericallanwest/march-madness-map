@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Men's March Madness Territory Map</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%22 y=%2250%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2280%22>🏀</text></svg>">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; }
+        #header { padding: 15px; background: #222; color: white; text-align: center; }
+        .controls { margin-top: 10px; display: flex; justify-content: center; gap: 15px; align-items: center; flex-wrap: wrap; }
+        select, input, button { padding: 8px; font-size: 16px; border-radius: 4px; border: 1px solid #ccc;}
+        button { cursor: pointer; background-color: #4CAF50; color: white; border: none; }
+        button:hover { background-color: #45a049; }
+        .reset-btn { background-color: #f44336; }
+        .reset-btn:hover { background-color: #da190b; }
+        #map { flex-grow: 1; width: 100%; }
+        
+        /* CSS for the permanent map labels */
+        .team-label {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            color: white;
+            font-weight: bold;
+            font-size: 11px;
+            text-align: center;
+            /* Creates a black outline around white text for readability over any color */
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        
+        .info-popup { font-size: 14px; text-align: center; min-width: 150px; }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h2 style="margin-top: 0;">2026 Men's March Madness Territory Map</h2>
+        <div class="controls">
+            <div>
+                <label for="roundSelect"><strong>Select Round: </strong></label>
+                <select id="roundSelect" onchange="loadRoundMap()">
+                    <option value="68">First Four</option>
+                    <option value="64">Round of 64</option>
+                    <option value="32">Round of 32</option>
+                    <option value="16">Sweet 16</option>
+                    <option value="8">Elite Eight</option>
+                    <option value="4">Final Four</option>
+                    <option value="2">Championship</option>
+                    <option value="1">Champion</option>
+                </select>
+            </div>
+            <div>
+                <label for="zipInput"><strong>Find Your Location: </strong></label>
+                <input type="text" id="zipInput" placeholder="Enter US Zip Code" maxlength="5" size="15">
+                <button onclick="findZipCode()">Search</button>
+                <button onclick="resetMap()" class="reset-btn">Reset Map</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script>
+        // Initialize the Map (Centered on the US)
+        var map = L.map('map').setView([45.0, -110.0], 3);
+        var currentGeoJSONLayer = null;
+        var searchMarker = null;
+
+        // Add a clean, light basemap
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+            subdomains: 'abcd',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Function to load the GeoJSON data based on dropdown
+        function loadRoundMap() {
+            var round = parseInt(document.getElementById("roundSelect").value);
+            var geojsonFile = "round_" + round + ".geojson";
+
+            // Determine dynamic font size based on how many teams are left
+            var labelSize = "10px";
+            if (round === 64) labelSize = "11px";
+            else if (round === 32) labelSize = "13px";
+            else if (round === 16) labelSize = "16px";
+            else if (round === 8) labelSize = "22px";
+            else if (round === 4) labelSize = "32px";
+            else if (round <= 2) labelSize = "48px";
+
+            if (currentGeoJSONLayer) {
+                map.removeLayer(currentGeoJSONLayer);
+            }
+
+            fetch(geojsonFile)
+                .then(response => response.json())
+                .then(data => {
+                    currentGeoJSONLayer = L.geoJSON(data, {
+                        style: function(feature) {
+                            return {
+                                fillColor: feature.properties.Hex,
+                                fillOpacity: 0.8,
+                                
+                                // --- Active styling: Clean white borders ---
+                                color: "#ffffff",
+                                weight: 1.5
+                                
+                                // --- Commented out: Smart border styling ---
+                                // color: feature.properties.Border_Color || "#ffffff",
+                                // weight: feature.properties.Border_Weight || 1.5
+                            };
+                        },
+                        onEachFeature: function(feature, layer) {
+                            var teamName = feature.properties.School || "Unknown";
+                            var mascot = feature.properties.Mascot || "";
+                            var arena = feature.properties.Arena || "Unknown Arena";
+                            var capacity = feature.properties.Capacity || "N/A";
+                            var attendance = feature.properties.Avg_Attendance || "N/A";
+
+                            if (typeof capacity === 'number') capacity = capacity.toLocaleString();
+                            if (typeof attendance === 'number') attendance = attendance.toLocaleString();
+
+                            // 1. Permanent Label with Dynamic Font Size
+                            var labelHtml = `<span style="font-size: ${labelSize}; line-height: 1.1;">${teamName}</span>`;
+                            
+                            layer.bindTooltip(labelHtml, {
+                                permanent: true, 
+                                direction: "center", 
+                                className: "team-label"
+                            });
+
+                            // 2. Click Popup with Detailed Info
+                            var popupContent = `
+                                <div class='info-popup'>
+                                    <h3 style='margin: 0 0 5px 0;'>${teamName} ${mascot}</h3>
+                                    <hr style='margin: 5px 0;'>
+                                    <b>Arena:</b> ${arena}<br>
+                                    <b>Capacity:</b> ${capacity}<br>
+                                    <b>Avg. Attendance:</b> ${attendance}
+                                </div>
+                            `;
+                            layer.bindPopup(popupContent);
+                            
+                            // 3. Highlight territory on mouseover
+                            layer.on({
+                                mouseover: function(e) { e.target.setStyle({ fillOpacity: 1.0, weight: 3 }); },
+                                mouseout: function(e) { currentGeoJSONLayer.resetStyle(e.target); }
+                            });
+                        }
+                    }).addTo(map);
+
+                    // If a user changes rounds while a zip code is searched, re-evaluate the pin!
+                    if (searchMarker) {
+                        evaluateZipCodeTerritory(searchMarker.getLatLng(), document.getElementById("zipInput").value);
+                    }
+                })
+                .catch(error => console.error("Error loading GeoJSON:", error));
+        }
+
+        // Search Function: Turns Zip into Lat/Lon
+        function findZipCode() {
+            var zip = document.getElementById("zipInput").value.trim();
+            if (!zip || zip.length < 5) {
+                alert("Please enter a valid 5-digit US Zip Code.");
+                return;
+            }
+
+            var geocodeUrl = `https://nominatim.openstreetmap.org/search?postalcode=${zip}&country=usa&format=json`;
+
+            fetch(geocodeUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length === 0) {
+                        alert("Zip code not found. Please try another.");
+                        return;
+                    }
+                    var latlng = L.latLng(parseFloat(data[0].lat), parseFloat(data[0].lon));
+                    map.flyTo(latlng, 7, { animate: true, duration: 1.5 });
+                    evaluateZipCodeTerritory(latlng, zip);
+                })
+                .catch(error => console.error("Geocoding error:", error));
+        }
+
+        // Logic Function: Checks which polygon the coordinate is inside
+        function evaluateZipCodeTerritory(latlng, zip) {
+            if (searchMarker) map.removeLayer(searchMarker);
+            searchMarker = L.marker(latlng).addTo(map);
+            
+            var teamFound = "Unknown";
+            var point = turf.point([latlng.lng, latlng.lat]);
+
+            if (currentGeoJSONLayer) {
+                currentGeoJSONLayer.eachLayer(function(layer) {
+                    var polygon = layer.feature;
+                    if (turf.booleanPointInPolygon(point, polygon)) {
+                        teamFound = polygon.properties.School + " " + polygon.properties.Mascot;
+                    }
+                });
+            }
+
+            searchMarker.bindPopup(`<div style='text-align:center; font-size:14px;'><b>Zip Code ${zip}</b><br>You are in <b>${teamFound}</b> territory!</div>`).openPopup();
+        }
+
+        // Reset Map Function
+        function resetMap() {
+            if (searchMarker) {
+                map.removeLayer(searchMarker);
+                searchMarker = null;
+            }
+            document.getElementById("zipInput").value = "";
+            map.closePopup();
+            
+            // Fly back to the new 50-state center and zoom level!
+            map.flyTo([45.0, -110.0], 3, { animate: true, duration: 1.5 });
+        }
+
+        // Load the initial map on startup
+        loadRoundMap();
+    </script>
+</body>
+</html>
