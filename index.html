@@ -47,12 +47,12 @@
                 <select id="roundSelect" onchange="loadRoundMap()">
                     <option value="68">First Four</option>
                     <option value="64">Round of 64</option>
-                    <option value="32">Round of 32</option>
-                    <option value="16">Sweet 16</option>
-                    <option value="8">Elite Eight</option>
-                    <option value="4">Final Four</option>
-                    <option value="2">Championship</option>
-                    <option value="1">Champion</option>
+                    <option value="32" selected>Round of 32</option>
+                    <!-- <option value="16">Sweet 16</option> -->
+                    <!-- <option value="8">Elite Eight</option> -->
+                    <!-- <option value="4">Final Four</option> -->
+                    <!-- <option value="2">Championship</option> -->
+                    <!-- <option value="1">Champion</option> -->
                 </select>
             </div>
             <div>
@@ -68,7 +68,7 @@
 
     <script>
         // Initialize the Map (Centered on the US)
-        var map = L.map('map').setView([45.0, -110.0], 3);
+        var map = L.map('map').setView([39.8283, -98.5795], 4);
         var currentGeoJSONLayer = null;
         var searchMarker = null;
 
@@ -208,15 +208,12 @@
 
         // Reset Map Function
         function resetMap() {
-            if (searchMarker) {
-                map.removeLayer(searchMarker);
-                searchMarker = null;
-            }
+            if (searchMarker) { map.removeLayer(searchMarker); searchMarker = null; }
             document.getElementById("zipInput").value = "";
             map.closePopup();
             
-            // Fly back to the new 50-state center and zoom level!
-            map.flyTo([45.0, -110.0], 3, { animate: true, duration: 1.5 });
+            // Back to the Lower 48!
+            map.flyTo([39.8283, -98.5795], 4, { animate: true, duration: 1.5 });
         }
 
         // Load the initial map on startup
