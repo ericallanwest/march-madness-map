@@ -13,7 +13,13 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; }
         #header { padding: 15px; background: #222; color: white; text-align: center; }
-        .controls { margin-top: 10px; display: flex; justify-content: center; gap: 15px; align-items: center; flex-wrap: wrap; }
+        
+        /* The main controls container */
+        .controls { margin-top: 10px; display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap; }
+        
+        /* ADDED: This forces the labels and inputs in every section to perfectly vertically align */
+        .controls div { display: flex; align-items: center; gap: 8px; }
+        
         select, input, button { padding: 8px; font-size: 16px; border-radius: 4px; border: 1px solid #ccc;}
         button { cursor: pointer; background-color: #4CAF50; color: white; border: none; }
         button:hover { background-color: #45a049; }
@@ -30,7 +36,6 @@
             font-weight: bold;
             font-size: 11px;
             text-align: center;
-            /* Creates a black outline around white text for readability over any color */
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         }
         
@@ -43,7 +48,7 @@
         <h2 style="margin-top: 0;">2026 Men's March Madness Territory Map</h2>
         <div class="controls">
             <div>
-                <label for="roundSelect"><strong>Select Round: </strong></label>
+                <label for="roundSelect"><strong>Round: </strong></label>
                 <select id="roundSelect" onchange="loadRoundMap()">
                     <option value="68">First Four</option>
                     <option value="64">Round of 64</option>
@@ -51,14 +56,14 @@
                     </select>
             </div>
             <div>
-                <label for="zipInput"><strong>Find Your Location: </strong></label>
+                <label for="zipInput"><strong>Location: </strong></label>
                 <input type="text" id="zipInput" placeholder="Enter US Zip Code" maxlength="5" size="15">
                 <button onclick="findZipCode()">Search</button>
                 <button onclick="resetMap()" class="reset-btn">Reset Map</button>
             </div>
             <div>
                 <label for="opacitySlider"><strong>Opacity: </strong></label>
-                <input type="range" id="opacitySlider" min="0" max="1" step="0.1" value="0.8" oninput="updateOpacity(this.value)">
+                <input type="range" id="opacitySlider" min="0" max="1" step="0.1" value="0.5" oninput="updateOpacity(this.value)">
             </div>
         </div>
     </div>
@@ -66,11 +71,12 @@
     <div id="map"></div>
 
     <script>
-        // Initialize the Map (Centered on the US)
+        // Initialize the Map (Centered on the Lower 48)
         var map = L.map('map').setView([39.8283, -98.5795], 4);
         var currentGeoJSONLayer = null;
         var searchMarker = null;
-        var currentOpacity = 0.8; // Track the current opacity level from the slider
+        var teamLayer = null; 
+        var currentOpacity = 0.5; // UPDATED: Default tracker set to 0.5
 
         // Function to update layer opacity when the slider moves
         function updateOpacity(value) {
@@ -112,7 +118,7 @@
                         style: function(feature) {
                             return {
                                 fillColor: feature.properties.Hex,
-                                fillOpacity: currentOpacity, // Linked to the slider variable
+                                fillOpacity: currentOpacity, // Linked dynamically to the slider
                                 color: "#ffffff",
                                 weight: 1.5
                             };
@@ -151,17 +157,17 @@
                             // 3. Highlight territory on mouseover
                             layer.on({
                                 mouseover: function(e) { 
-                                    e.target.setStyle({ fillOpacity: 1.0, weight: 3 }); 
+                                    // UPDATED: Dynamically bump opacity by 30%, maxing out at 1.0
+                                    var hoverOpacity = Math.min(currentOpacity + 0.3, 1.0);
+                                    e.target.setStyle({ fillOpacity: hoverOpacity, weight: 3 }); 
                                 },
                                 mouseout: function(e) { 
-                                    // Snaps back to whatever the slider is currently set to!
                                     e.target.setStyle({ fillOpacity: currentOpacity, weight: 1.5 }); 
                                 }
                             });
                         }
                     }).addTo(map);
 
-                    // If a user changes rounds while a zip code is searched, re-evaluate the pin!
                     if (searchMarker) {
                         evaluateZipCodeTerritory(searchMarker.getLatLng(), document.getElementById("zipInput").value);
                     }
@@ -219,7 +225,6 @@
             document.getElementById("zipInput").value = "";
             map.closePopup();
             
-            // Back to the Lower 48!
             map.flyTo([39.8283, -98.5795], 4, { animate: true, duration: 1.5 });
         }
 
