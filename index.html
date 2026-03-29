@@ -190,8 +190,8 @@
                             return {
                                 fillColor: feature.properties.Hex,
                                 fillOpacity: currentOpacity, // Linked dynamically to the slider
-                                color: feature.properties.Hex2 || "#ffffff",
-                                weight: 2
+                                color: "#ffffff",
+                                weight: 1.5
                             };
                         },
                         onEachFeature: function (feature, layer) {
@@ -245,10 +245,15 @@
                         var props = feature.properties;
                         if (props.Lat && props.Lon) {
                             var teamColor = props.Hex || "#000000";
+                            var outlineColor = props.Hex2 || "#ffffff";
+                            if (outlineColor.toLowerCase() === "#ffffff") {
+                                outlineColor = "#000000";
+                            }
+                            
                             var marker = L.circleMarker([props.Lat, props.Lon], {
                                 radius: 5,
                                 fillColor: teamColor,
-                                color: props.Hex2 || "#ffffff",
+                                color: outlineColor,
                                 weight: 2,
                                 opacity: 1,
                                 fillOpacity: 0.9
