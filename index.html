@@ -244,15 +244,15 @@
                     data.features.forEach(function (feature) {
                         var props = feature.properties;
                         if (props.Lat && props.Lon) {
-                            var teamColor = props.Hex || "#000000";
-                            var outlineColor = props.Hex2 || "#ffffff";
-                            if (outlineColor.toLowerCase() === "#ffffff") {
+                            var pointFillColor = props.Hex2 || "#000000";
+                            var outlineColor = "#ffffff";
+                            if (pointFillColor.toLowerCase() === "#ffffff") {
                                 outlineColor = "#000000";
                             }
                             
                             var marker = L.circleMarker([props.Lat, props.Lon], {
                                 radius: 5,
-                                fillColor: teamColor,
+                                fillColor: pointFillColor,
                                 color: outlineColor,
                                 weight: 2,
                                 opacity: 1,
