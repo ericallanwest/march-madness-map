@@ -147,6 +147,16 @@
             currentOpacity = parseFloat(value);
             if (currentGeoJSONLayer) {
                 currentGeoJSONLayer.setStyle({ fillOpacity: currentOpacity });
+                currentGeoJSONLayer.eachLayer(function(layer) {
+                    if (layer.getTooltip()) {
+                        layer.getTooltip().setOpacity(currentOpacity);
+                    }
+                });
+            }
+            if (arenaLayer) {
+                arenaLayer.eachLayer(function(layer) {
+                    layer.setStyle({ fillOpacity: currentOpacity, opacity: currentOpacity });
+                });
             }
         }
 
@@ -210,7 +220,8 @@
                             layer.bindTooltip(labelHtml, {
                                 permanent: true,
                                 direction: "center",
-                                className: "team-label"
+                                className: "team-label",
+                                opacity: currentOpacity
                             });
 
                             // 2. Click Popup with Detailed Info
@@ -255,21 +266,26 @@
                                 fillColor: pointFillColor,
                                 color: outlineColor,
                                 weight: 2,
-                                opacity: 1,
-                                fillOpacity: 0.9
+                                opacity: currentOpacity,
+                                fillOpacity: currentOpacity
                             });
+
+                            var capacity = props.Capacity || "N/A";
+                            var attendance = props.Avg_Attendance || "N/A";
+                            if (typeof capacity === 'number') capacity = capacity.toLocaleString();
+                            if (typeof attendance === 'number') attendance = attendance.toLocaleString();
 
                             var popupContent = `
                                 <div class='info-popup'>
-                                    <h3 style='margin: 0 0 5px 0;'>${props.School || ""} ${props.Mascot || ""}</h3>
+                                    <h3 style='margin: 0 0 5px 0;'>${props.School || "Unknown"} ${props.Mascot || ""}</h3>
                                     <hr style='margin: 5px 0;'>
-                                    <b>Arena:</b> ${props.Arena || "Unknown"}<br>
-                                    <b>Location:</b> ${props.City || ""}, ${props.State || ""}<br>
-                                    <b>Capacity:</b> ${props.Capacity ? props.Capacity.toLocaleString() : "N/A"}
+                                    <b>Arena:</b> ${props.Arena || "Unknown Arena"}<br>
+                                    <b>Capacity:</b> ${capacity}<br>
+                                    <b>Avg. Attendance:</b> ${attendance}
                                 </div>
                             `;
                             marker.bindPopup(popupContent);
-                            var tooltipContent = `<b>${props.Arena || "Arena"}</b><br>Hover for details`;
+                            var tooltipContent = `<b>${props.Arena || "Arena"}</b><br>Click for details`;
                             marker.bindTooltip(tooltipContent, { direction: 'top' });
 
                             arenaLayer.addLayer(marker);
