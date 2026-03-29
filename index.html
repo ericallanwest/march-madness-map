@@ -107,6 +107,7 @@
             <div>
                 <label for="roundSelect"><strong>Round: </strong></label>
                 <select id="roundSelect" onchange="loadRoundMap()">
+                    <option value="362">Regular Season</option>
                     <option value="68">First Four</option>
                     <option value="64">First Round</option>
                     <option value="32">Second Round</option>
@@ -147,14 +148,14 @@
             currentOpacity = parseFloat(value);
             if (currentGeoJSONLayer) {
                 currentGeoJSONLayer.setStyle({ fillOpacity: currentOpacity });
-                currentGeoJSONLayer.eachLayer(function(layer) {
+                currentGeoJSONLayer.eachLayer(function (layer) {
                     if (layer.getTooltip()) {
                         layer.getTooltip().setOpacity(currentOpacity);
                     }
                 });
             }
             if (arenaLayer) {
-                arenaLayer.eachLayer(function(layer) {
+                arenaLayer.eachLayer(function (layer) {
                     layer.setStyle({ fillOpacity: currentOpacity, opacity: currentOpacity });
                 });
             }
@@ -260,7 +261,7 @@
                             if (pointFillColor.toLowerCase() === "#ffffff") {
                                 outlineColor = "#000000";
                             }
-                            
+
                             var marker = L.circleMarker([props.Lat, props.Lon], {
                                 radius: 5,
                                 fillColor: pointFillColor,
