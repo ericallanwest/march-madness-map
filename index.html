@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 Men's March Madness Territory Map</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%22 y=%2250%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2280%22>🏀</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%22 y=%2250%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2280%22>🏀</text></svg>">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
 
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; }
-        #header { padding: 15px; background: #222; color: white; text-align: center; }
-        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #header {
+            padding: 15px;
+            background: #222;
+            color: white;
+            text-align: center;
+        }
+
         /* The main controls container */
-        .controls { margin-top: 10px; display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap; }
-        
+        .controls {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
         /* ADDED: This forces the labels and inputs in every section to perfectly vertically align */
-        .controls div { display: flex; align-items: center; gap: 8px; }
-        
-        select, input, button { padding: 8px; font-size: 16px; border-radius: 4px; border: 1px solid #ccc;}
-        button { cursor: pointer; background-color: #4CAF50; color: white; border: none; }
-        button:hover { background-color: #45a049; }
-        .reset-btn { background-color: #f44336; }
-        .reset-btn:hover { background-color: #da190b; }
-        #map { flex-grow: 1; width: 100%; }
-        
+        .controls div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        select,
+        input,
+        button {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .reset-btn {
+            background-color: #f44336;
+        }
+
+        .reset-btn:hover {
+            background-color: #da190b;
+        }
+
+        #map {
+            flex-grow: 1;
+            width: 100%;
+        }
+
         /* CSS for the permanent map labels */
         .team-label {
             background: transparent;
@@ -38,10 +90,15 @@
             text-align: center;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         }
-        
-        .info-popup { font-size: 14px; text-align: center; min-width: 150px; }
+
+        .info-popup {
+            font-size: 14px;
+            text-align: center;
+            min-width: 150px;
+        }
     </style>
 </head>
+
 <body>
 
     <div id="header">
@@ -53,8 +110,12 @@
                     <option value="68">First Four</option>
                     <option value="64">First Round</option>
                     <option value="32">Second Round</option>
-                    <option value="16" selected>Sweet 16</option>
-                    </select>
+                    <option value="16">Sweet 16</option>
+                    <option value="8" selected>Elite 8</option>
+                    <!-- <option value="4">Final Four</option> -->
+                    <!-- <option value="2">Championship</option> -->
+                    <!-- <option value="1">National Champion</option> -->
+                </select>
             </div>
             <div>
                 <label for="zipInput"><strong>Location: </strong></label>
@@ -64,7 +125,8 @@
             </div>
             <div>
                 <label for="opacitySlider"><strong>Opacity: </strong></label>
-                <input type="range" id="opacitySlider" min="0" max="1" step="0.1" value="0.5" oninput="updateOpacity(this.value)">
+                <input type="range" id="opacitySlider" min="0" max="1" step="0.1" value="0.5"
+                    oninput="updateOpacity(this.value)">
             </div>
         </div>
     </div>
@@ -76,7 +138,7 @@
         var map = L.map('map').setView([39.8283, -98.5795], 4);
         var currentGeoJSONLayer = null;
         var searchMarker = null;
-        var teamLayer = null; 
+        var teamLayer = null;
         var currentOpacity = 0.5; // UPDATED: Default tracker set to 0.5
 
         // Function to update layer opacity when the slider moves
@@ -116,7 +178,7 @@
                 .then(response => response.json())
                 .then(data => {
                     currentGeoJSONLayer = L.geoJSON(data, {
-                        style: function(feature) {
+                        style: function (feature) {
                             return {
                                 fillColor: feature.properties.Hex,
                                 fillOpacity: currentOpacity, // Linked dynamically to the slider
@@ -124,7 +186,7 @@
                                 weight: 1.5
                             };
                         },
-                        onEachFeature: function(feature, layer) {
+                        onEachFeature: function (feature, layer) {
                             var teamName = feature.properties.School || "Unknown";
                             var mascot = feature.properties.Mascot || "";
                             var arena = feature.properties.Arena || "Unknown Arena";
@@ -136,10 +198,10 @@
 
                             // 1. Permanent Label with Dynamic Font Size
                             var labelHtml = `<span style="font-size: ${labelSize}; line-height: 1.1;">${teamName}</span>`;
-                            
+
                             layer.bindTooltip(labelHtml, {
-                                permanent: true, 
-                                direction: "center", 
+                                permanent: true,
+                                direction: "center",
                                 className: "team-label"
                             });
 
@@ -154,16 +216,16 @@
                                 </div>
                             `;
                             layer.bindPopup(popupContent);
-                            
+
                             // 3. Highlight territory on mouseover
                             layer.on({
-                                mouseover: function(e) { 
+                                mouseover: function (e) {
                                     // UPDATED: Dynamically bump opacity by 30%, maxing out at 1.0
                                     var hoverOpacity = Math.min(currentOpacity + 0.3, 1.0);
-                                    e.target.setStyle({ fillOpacity: hoverOpacity, weight: 3 }); 
+                                    e.target.setStyle({ fillOpacity: hoverOpacity, weight: 3 });
                                 },
-                                mouseout: function(e) { 
-                                    e.target.setStyle({ fillOpacity: currentOpacity, weight: 1.5 }); 
+                                mouseout: function (e) {
+                                    e.target.setStyle({ fillOpacity: currentOpacity, weight: 1.5 });
                                 }
                             });
                         }
@@ -204,12 +266,12 @@
         function evaluateZipCodeTerritory(latlng, zip) {
             if (searchMarker) map.removeLayer(searchMarker);
             searchMarker = L.marker(latlng).addTo(map);
-            
+
             var teamFound = "Unknown";
             var point = turf.point([latlng.lng, latlng.lat]);
 
             if (currentGeoJSONLayer) {
-                currentGeoJSONLayer.eachLayer(function(layer) {
+                currentGeoJSONLayer.eachLayer(function (layer) {
                     var polygon = layer.feature;
                     if (turf.booleanPointInPolygon(point, polygon)) {
                         teamFound = polygon.properties.School + " " + polygon.properties.Mascot;
@@ -225,7 +287,7 @@
             if (searchMarker) { map.removeLayer(searchMarker); searchMarker = null; }
             document.getElementById("zipInput").value = "";
             map.closePopup();
-            
+
             map.flyTo([39.8283, -98.5795], 4, { animate: true, duration: 1.5 });
         }
 
@@ -233,4 +295,5 @@
         loadRoundMap();
     </script>
 </body>
+
 </html>
