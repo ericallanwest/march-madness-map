@@ -1,0 +1,366 @@
+School,Mascot,Arena,Hex,Hex2,Lat,Lon,Furthest_Round,Capacity,Avg_Attendance
+Syracuse,Orange,JMA Wireless Dome,#000e54,#ff431b,43.0363,-76.1364,362,35446,17726
+Louisville,Cardinals,KFC Yum! Center,#c9001f,#ffffff,38.2577,-85.7539,362,22090,15396
+North Carolina,Tar Heels,Dean Smith Center,#7bafd4,#13294b,35.8995,-79.0438,362,21750,19499
+Tennessee,Volunteers,Thompson–Boling Arena,#ff8200,#ffffff,35.9512,-83.925,362,21678,19251
+Kentucky,Wildcats,Rupp Arena,#0033a0,#ffffff,38.0494,-84.5024,362,20545,19731
+Georgetown,Hoyas,Capital One Arena,#110E42,#001c58,38.8982,-77.0209,362,20308,5862
+St. John's,Red Storm,Madison Square Garden,#d10000,#101010,40.7505,-73.9935,362,19812,13098
+NC State,Wolfpack,Lenovo Center,#cc0000,#ffffff,35.8034,-78.7219,362,19500,16341
+Arkansas,Razorbacks,Bud Walton Arena,#a32136,#ffffff,36.0616,-94.1781,362,19368,18796
+BYU,Cougars,Marriott Center,#0047ba,#002e5d,40.2539,-111.6493,362,19000,18073
+Ohio State,Buckeyes,Value City Arena,#ba0c2f,#a8adb4,40.0076,-83.025,362,18809,11252
+UNLV,Rebels,Thomas & Mack Center,#cf0a2c,#cac8c8,36.1049,-115.1443,362,18776,5374
+Seton Hall,Pirates,Prudential Center,#0857B1,#8a8d8f,40.7334,-74.1711,362,18711,7009
+Creighton,Bluejays,CHI Health Center Omaha,#005ca9,#6cadde,41.2637,-95.9279,362,18320,16636
+Memphis,Tigers,FedExForum,#004991,#8e908f,35.1382,-90.0507,362,18119,9608
+South Carolina,Gamecocks,Colonial Life Arena,#73000a,#000000,33.9948,-81.0374,362,18000,10797
+Indiana,Hoosiers,Simon Skjodt Assembly Hall,#970310,#ffffff,39.1809,-86.5223,362,17472,15677
+Marquette,Golden Eagles,Fiserv Forum,#003366,#ffcc00,43.045,-87.9175,362,17385,14485
+Maryland,Terrapins,Xfinity Center,#ce1126,#ffffff,38.9956,-76.9413,362,17300,12888
+Wisconsin,Badgers,Kohl Center,#a00000,#ffffff,43.0694,-89.3969,362,17249,15230
+Fresno State,Bulldogs,Save Mart Center at Fresno State,#b1102b,#13284c,36.821,-119.7373,362,15596,4409
+Illinois,Fighting Illini,State Farm Center,#ff5f05,#13294b,40.0963,-88.2359,362,15544,14919
+Iowa,Hawkeyes,Carver–Hawkeye Arena,#231f20,#fcd116,41.664,-91.5545,362,15500,11280
+New Mexico,Lobos,The Pit,#ba0c2f,#a7a8aa,35.0667,-106.6322,362,15411,12133
+Alabama,Crimson Tide,Coleman Coliseum,#9e1b32,#ffffff,33.2027,-87.5397,362,15383,13270
+Kansas,Jayhawks,Allen Fieldhouse,#0051ba,#e8000d,38.9543,-95.2528,362,15300,15307
+Texas Tech,Red Raiders,United Supermarkets Arena,#da291c,#000000,33.5813,-101.8866,362,15300,13234
+Penn State,Nittany Lions,Bryce Jordan Center,#061440,#ffffff,40.8086,-77.8555,362,15261,5828
+Siena,Saints,MVP Arena,#037961,#eea60f,42.6486,-73.7547,362,15229,5149
+Nebraska,Cornhuskers,Pinnacle Bank Arena,#e31937,#ffffff,40.8179,-96.7125,362,15147,14671
+Missouri,Tigers,Mizzou Arena,#f1b82d,#000000,38.9325,-92.3337,362,15061,10379
+Utah,Utes,Jon M. Huntsman Center,#be0000,#ffffff,40.762,-111.8388,362,15000,7209
+Purdue,Boilermakers,Mackey Arena,#ceb888,#000000,40.4333,-86.9162,362,14848,14876
+Michigan State,Spartans,Breslin Student Events Center,#173f35,#ffffff,42.7282,-84.492,362,14797,14797
+Arizona,Wildcats,McKale Center,#cc0033,#003366,32.2304,-110.946,362,14688,14297
+Minnesota,Golden Gophers,Williams Arena,#5e0a2f,#fab41c,44.977,-93.2283,362,14625,8663
+Virginia,Cavaliers,John Paul Jones Arena,#f84c1e,#232d4b,38.046,-78.5066,362,14593,12885
+Wake Forest,Demon Deacons,Lawrence Joel Veterans Memorial Coliseum,#ceb888,#2c2a29,36.1278,-80.2578,362,14407,6776
+Vanderbilt,Commodores,Memorial Gymnasium,#000000,#cfae70,36.1445,-86.8073,362,14316,9280
+Iowa State,Cyclones,Hilton Coliseum,#ae192d,#ffc72a,42.021,-93.6348,362,14267,14051
+Arizona State,Sun Devils,Desert Financial Arena,#ffc627,#8c1d40,33.4245,-111.931,362,14198,7851
+West Virginia,Mountaineers,WVU Coliseum,#eaaa00,#002855,39.6494,-79.9814,362,14000,11080
+UCLA,Bruins,Pauley Pavilion,#2774ae,#f2a900,34.0705,-118.4468,362,13800,7036
+Oklahoma State,Cowboys,Gallagher-Iba Arena,#fe5c00,#000000,36.1257,-97.0652,362,13611,5848
+Cleveland State,Vikings,Wolstein Center,#006633,#231f20,41.4992,-81.6766,362,13610,1753
+Louisiana,Ragin' Cajuns,Cajundome,#ce181e,#000000,30.2182,-92.0409,362,13500,2592
+Dayton,Flyers,University of Dayton Arena,#004B8D,#ffffff,39.7355,-84.1998,362,13409,13242
+LSU,Tigers,Pete Maravich Assembly Center,#461d76,#fdd023,30.4145,-91.1845,362,13215,7117
+Ohio,Bobcats,Convocation Center,#154734,#ffffff,39.3232,-82.1057,362,13080,4169
+Texas A&M,Aggies,Reed Arena,#500000,#ffffff,30.6057,-96.3463,362,12989,8227
+Michigan,Wolverines,Crisler Center,#00274c,#ffcb05,42.265,-83.7467,362,12707,12545
+Boise State,Broncos,ExtraMile Arena,#0033a0,#d64309,43.6036,-116.1989,362,12644,9999
+Pittsburgh,Panthers,Petersen Events Center,#003594,#ffb81c,40.444,-79.9621,362,12508,5742
+New Mexico State,Aggies,Pan American Center,#7e141b,#231f20,32.284,-106.7422,362,12482,5226
+San Diego State,Aztecs,Viejas Arena,#a6192e,#000000,32.7738,-117.0745,362,12414,11567
+Providence,Friars,Amica Mutual Pavilion,#000000,#a3a19e,41.8236,-71.4181,362,12400,10209
+Oregon,Ducks,Matthew Knight Arena,#00934b,#fff41b,44.0448,-123.0664,362,12369,6033
+UTEP,Miners,Don Haskins Center,#ff8200,#041e42,31.7776,-106.5057,362,12222,3943
+Florida State,Seminoles,Donald L. Tucker Civic Center,#782f40,#ceb888,30.4378,-84.2867,362,12100,5715
+Washington State,Cougars,Beasley Coliseum,#a60f2d,#4d4d4d,46.7352,-117.1581,362,12058,3332
+Cincinnati,Bearcats,Fifth Third Arena,#000000,#e00122,39.1311,-84.5141,362,12012,9852
+California,Golden Bears,Haas Pavilion,#041e42,#ffc72c,37.8694,-122.2622,362,11858,4210
+Wyoming,Cowboys,Arena-Auditorium,#492f24,#ffc425,41.3133,-105.5693,362,11612,3749
+Weber State,Wildcats,Dee Events Center,#18005a,#ebebeb,41.1824,-111.945,362,11592,2619
+Nevada,Wolf Pack,Lawlor Events Center,#041e42,#8a8d8f,39.5451,-119.8183,362,11536,8133
+Oklahoma,Sooners,Lloyd Noble Center,#990000,#ffffff,35.187,-97.4443,362,11528,6301
+Middle Tennessee,Blue Raiders,Murphy Center,#036eb7,#ffffff,35.8524,-86.3695,362,11520,3682
+Ball State,Cardinals,Worthen Arena,#ba0c2f,#ffffff,40.2071,-85.4062,362,11500,2797
+Bradley,Braves,Carver Arena,#b70002,#c0c0c0,40.6919,-89.5936,362,11433,5605
+William & Mary,Tribe,Kaplan Arena,#115740,#f0b323,37.2735,-76.7197,362,11300,3723
+Northern Arizona,Lumberjacks,Walkup Skydome,#003976,#1b3069,35.1806,-111.6529,362,11230,589
+Colorado,Buffaloes,CU Events Center,#cfb87c,#000000,40.0047,-105.2606,362,11064,6207
+Missouri State,Bears,Great Southern Bank Arena,#5e0009,#ffffff,37.2017,-93.2808,362,11000,1988
+Kansas State,Wildcats,Bramlage Coliseum,#330a57,#e2e3e4,39.2003,-96.5938,362,11000,7827
+Chattanooga,Mocs,McKenzie Arena,#00386b,#dca71d,35.0504,-85.3009,362,10995,3518
+Milwaukee,Panthers,UW–Milwaukee Panther Arena,#000000,#ffc20e,43.0423,-87.917,362,10783,2037
+Texas,Longhorns,Moody Center,#af5c37,#ffffff,30.2809,-97.7307,362,10763,10835
+Miami (Ohio),RedHawks,Millett Hall,#c41230,#ffffff,39.5172,-84.7346,362,10640,4685
+Saint Louis,Billikens,Chaifetz Arena,#00539C,#ebebeb,38.6325,-90.2282,362,10600,6900
+Mississippi State,Bulldogs,Humphrey Coliseum,#5d1725,#c1c6c8,33.4387,-88.7943,362,10575,7593
+Georgia,Bulldogs,Stegeman Coliseum,#ba0c2f,#2c2a29,33.9428,-83.3781,362,10523,8821
+Wichita State,Shockers,Charles Koch Arena,#ffcd00,#27251f,37.7218,-97.2974,362,10506,5892
+Florida,Gators,Exactech Arena at the Stephen C. O'Connell Center,#0021a5,#fa4616,29.6412,-82.3562,362,10500,10525
+South Florida,Bulls,Yuengling Center,#006747,#cfc493,28.0592,-82.4066,362,10411,1451
+DePaul,Blue Demons,Wintrust Arena,#2d649c,#ce1125,41.8537,-87.6214,362,10387,4589
+Hawaii,,Stan Sheriff Center,#005737,#000000,21.2943,-157.8189,362,10300,5045
+Utah State,Aggies,Smith Spectrum,#0f2439,#ffffff,41.7476,-111.8121,362,10270,9682
+USC,Spartans,Galen Center,#9d2235,#ffc72c,34.0208,-118.2798,362,10258,5538
+Xavier,Musketeers,Cintas Center,#21304e,#a5a7a8,39.1504,-84.4718,362,10250,9681
+Temple,Owls,Liacouras Center,#a41e35,#ffffff,39.9798,-75.1586,362,10206,2873
+Indiana State,Sycamores,Hulman Center,#00669a,#f0f0f0,39.4685,-87.4051,362,10200,4569
+Illinois State,Redbirds,CEFCU Arena,#CE1126,#ffe716,40.5107,-88.9988,362,10200,4489
+UConn,Huskies,Harry A. Gampel Pavilion,#0c2340,#a2aaad,41.8053,-72.2544,362,10167,12718
+Oral Roberts,Golden Eagles,Mabee Center,#002462,#dac792,36.0481,-95.9557,362,10154,3294
+Lamar,Cardinals,Neches Federal Credit Union Arena at the Montagne Center,#000000,#ebebeb,30.0389,-94.0759,362,10080,2092
+Virginia Tech,Hokies,Cassell Coliseum,#6a2c3e,#cf4520,37.2225,-80.4189,362,10052,6367
+South Alabama,Jaguars,Mitchell Center,#00205b,#bf0d3e,30.6923,-88.1797,362,10041,2095
+Arkansas State,Red Wolves,First National Bank Arena,#cc092f,#000000,35.8454,-90.6703,362,10038,3865
+Evansville,Purple Aces,Ford Center,#663399,#ef6f00,37.9722,-87.5678,362,10000,4089
+George Mason,Patriots,EagleBank Arena,#016600,#ecb010,38.8313,-77.308,362,10000,4056
+Northern Illinois,Huskies,Convocation Center,#c8102e,#000000,41.9354,-88.7856,362,10000,1129
+Washington,Huskies,Alaska Airlines Arena at Hec Edmundson Pavilion,#33006f,#e8d3a2,47.661,-122.3177,362,10000,7162
+Texas State,Bobcats,Strahan Arena,#501214,#6a5638,29.8885,-97.9324,362,10000,1767
+North Texas,Mean Green,UNT Coliseum,#068f33,#ffffff,33.2099,-97.1515,362,9797,3448
+Green Bay,Phoenix,Resch Center,#006633,#ffffff,44.4995,-88.055,362,9729,2055
+Florida A&M,Rattlers,Al Lawson Center,#F89728,#00843d,30.4422,-84.2975,362,9639,1158
+Wright State,Raiders,Nutter Center,#cba052,#cba052,39.7821,-84.0523,362,9500,3562
+Ole Miss,Rebels,The Sandy and John Black Pavilion at Ole Miss,#13294b,#cf142b,34.3665,-89.53,362,9500,7980
+Massachusetts,Minutemen,Mullins Center,#881c1c,#ffffff,42.3895,-72.5334,362,9493,3164
+UCF,Knights,Addition Financial Arena,#000000,#b4a169,28.6073,-81.1973,362,9432,6830
+Northern Kentucky,Norse,Truist Arena,#ffc82e,#000000,39.032,-84.4591,362,9400,2099
+Duke,Blue Devils,Cameron Indoor Stadium,#00539b,#ffffff,35.9974,-78.9423,362,9314,9314
+Oregon State,Beavers,Gill Coliseum,#dc4405,#000000,44.5613,-123.2806,362,9301,3024
+Tennessee Tech,Golden Eagles,Hooper Eblen Center,#5A4099,#ffde00,36.1784,-85.5098,362,9280,981
+Notre Dame,Fighting Irish,Purcell Pavilion at Edmund P. Joyce Center,#062340,#c99700,41.7046,-86.2382,362,9149,5307
+Auburn,Tigers,Neville Arena,#002b5c,#f26522,32.592,-85.496,362,9121,8078
+Charlotte,49ers,Dale F. Halton Arena,#005035,#a49665,35.3065,-80.735,362,9105,2668
+Tennessee State,Tigers,Gentry Complex,#171796,#f0f0f0,36.1692,-86.8291,362,9100,543
+Butler,Bulldogs,Hinkle Fieldhouse,#0d1361,#00a3e0,39.8436,-86.1674,362,9100,7234
+Marshall,Thundering Herd,Cam Henderson Center,#00b140,#000000,38.4245,-82.4251,362,9048,3994
+Clemson,Tigers,Littlejohn Coliseum,#f56600,#ffffff,34.6687,-82.8374,362,9000,7468
+New Orleans,Privateers,Lakefront Arena,#005da6,#a2a9ae,30.0301,-90.0505,362,8933,722
+Eastern Michigan,Eagles,George Gervin GameAbove Center,#006938,#ffffff,42.2543,-83.6474,362,8824,2058
+Penn,Quakers,Palestra,#082A74,#a6163d,39.9514,-75.1886,362,8722,1860
+Boston College,Eagles,Conte Forum,#8c2232,#dbcca6,42.3354,-71.1683,362,8606,4122
+Murray State,Racers,CFSB Center,#002148,#000e00,36.6227,-88.3199,362,8602,5233
+Georgia Tech,Yellow Jackets,Hank McCamish Pavilion,#b3a369,#ffffff,33.7761,-84.3988,362,8600,5409
+UAB,Blazers,Bartow Arena,#1a5632,#fdb913,33.5021,-86.8092,362,8508,3660
+TCU,Horned Frogs,Schollmaier Arena,#4d1979,#ffffff,32.7088,-97.3667,362,8500,5321
+James Madison,Dukes,Atlantic Union Bank Center,#450084,#cbb677,38.4305,-78.8596,362,8500,3412
+Old Dominion,Monarchs,Chartway Arena,#003768,#a1d2f1,36.8841,-76.3014,362,8472,5202
+Tulsa,Golden Hurricane,Reynolds Center,#003595,#d0b787,36.149,-95.9422,362,8355,3287
+Appalachian State,Mountaineers,George M. Holmes Convocation Center,#173f35,#ffffff,36.2107,-81.6759,362,8325,1956
+Southern Illinois,Salukis,Banterra Center,#85283D,#c2c3c0,37.7083,-89.2187,362,8284,3983
+Texas Southern,Tigers,Health and Physical Education Arena,#860038,#ffffff,29.7209,-95.3596,362,8100,1225
+Southern Miss,Golden Eagles,Reed Green Coliseum,#ffc72c,#231f20,31.331,-89.3379,362,8095,2770
+Colorado State,Rams,Moby Arena,#004c23,#c8c372,40.5757,-105.0932,362,8083,5392
+Texas A&M-Corpus Christi,Aggies,American Bank Center Arena,#0067c5,#007f3e,27.7635,-97.4033,362,8000,1397
+Idaho State,Bengals,ICCU Dome,#ef8c00,#e9a126,42.87,-112.4286,362,8000,1294
+Tarleton State,Texans,EECU Center,#000000,##000000,32.2131,-98.2223,362,8000,1615
+Jackson State,Tigers,Williams Assembly Center,#123297,#b5b7ba,32.2997,-90.2119,362,8000,1069
+East Carolina,Pirates,Williams Arena at Minges Coliseum,#582c83,#ffc72c,35.6329,-77.4853,362,8000,3365
+Rutgers,Scarlet Knights,Jersey Mike's Arena,#ce0e2d,#ffffff,40.5252,-74.4414,362,8000,8000
+Louisiana Tech,Bulldogs,Thomas Assembly Center,#003087,#cb333b,32.5321,-92.6585,362,8000,2098
+Miami (FL),Hurricanes,Watsco Center,#c41230,#ffffff,25.7153,-80.2794,362,7972,5294
+Detroit Mercy,Titans,Calihan Hall,#165b9e,#d31733,42.4143,-83.1359,362,7917,1477
+Omaha,Mavericks,Baxter Arena,#e3193e,#474648,41.2361,-96.013,362,7898,2872
+Western Carolina,Catamounts,Liston B. Ramsey Regional Activity Center,#492F91,#bf9e70,35.31,-83.199,362,7826,1774
+Rhode Island,Rams,Ryan Center,#091f3f,#5ab3e8,41.4878,-71.5358,362,7657,3849
+Virginia Commonwealth,Cavaliers,Siegel Center,#ffaf00,#000000,37.5529,-77.4528,362,7637,7614
+UNC Greensboro,Spartans,First Horizon Coliseum,#003559,#ffd90a,36.0684,-79.8106,362,7613,1003
+UC Davis,Aggies,University Credit Union Center,#002855,#c3c4c6,38.5338,-121.7908,362,7600,1420
+Georgia State,Panthers,Georgia State Convocation Center,#0039a6,#ffffff,33.7425,-84.3887,362,7500,1927
+Southeastern Louisiana,Lions,University Center,#00654c,#eeb111,30.5202,-90.4731,362,7500,418
+Southern,Jaguars,F. G. Clark Activity Center,#004B97,#ffc82d,30.5258,-91.1949,362,7500,4269
+Grambling,Tigers,Fredrick C. Hobdy Assembly Center,#ee8601,#ffd10a,32.5195,-92.7212,362,7500,1606
+Utah Valley,Wolverines,UCCU Center,#004812,#e1c736,40.2789,-111.7185,362,7500,1908
+Baylor,Bears,Foster Pavilion,#154734,#ffb81c,31.5564,-97.1212,362,7500,6912
+Alabama State,Hornets,Dunn–Oliver Acadome,#e9a900,#0a0a0a,32.3618,-86.2932,362,7400,1110
+Southeast Missouri State,Bears,Show Me Center,#c8102e,#000000,37.3201,-89.5274,362,7373,2132
+Western Kentucky,Hilltoppers,E. A. Diddle Arena,#e13a3e,#ffffff,36.9845,-86.4576,362,7326,3376
+Montana,Grizzlies,Dahlberg Arena,#751D4A,#666666,46.8542,-113.9655,362,7321,2974
+Toledo,Rockets,Savage Arena,#0b2240,#ffcd00,41.6601,-83.61,362,7300,4447
+Montana State,Bobcats,Brick Breeden Fieldhouse,#00205c,#bc955c,45.6634,-111.0506,362,7250,3187
+Stanford,Cardinal,Maples Pavilion,#8c1515,#ffffff,37.4295,-122.1606,362,7233,3899
+Stephen F. Austin,Lumberjacks,William R. Johnson Coliseum,#393996,#bec0c2,31.6223,-94.6409,362,7203,2616
+Richmond,Spiders,Robins Center,#9e0712,#b90b2e,37.5807,-77.5389,362,7201,4724
+Hampton,Pirates,Hampton Convocation Center,#0067AC,##0067AC,37.021,-76.3386,362,7200,1425
+Houston,Cougars,Fertitta Center,#c8102e,#ffffff,29.7247,-95.347,362,7100,7088
+Louisiana–Monroe,Ragin' Cajuns,Fant–Ewing Coliseum,#840029,#fdb913,32.5318,-92.0658,362,7085,1620
+Northwestern,Wildcats,Welsh–Ryan Arena,#492f92,#ffffff,42.0669,-87.6924,362,7039,5454
+Northern Iowa,Panthers,McLeod Center,#473282,#ffffff,42.5144,-92.4673,362,7018,1516
+SMU,Mustangs,Moody Coliseum,#a80000,#0033a1,32.8404,-96.7807,362,7000,5413
+Grand Canyon,Antelopes,Global Credit Union Arena,#522398,#ffffff,33.5132,-112.1272,362,7000,7096
+UT Arlington,Mavericks,College Park Center,#004b7c,#f58024,32.7305,-97.1081,362,7000,1364
+Alcorn State,Braves,Davey Whitney Complex,#4b0058,#46166a,31.8204,-91.0501,362,7000,665
+Chicago State,Cougars,Emil and Patricia Jones Convocation Center,#006700,##006700,41.7913,-87.6008,362,7000,552
+UIC,Flames,Credit Union 1 Arena,#001e62,#d50032,41.8747,-87.6561,362,6958,1621
+Princeton,Tigers,Jadwin Gymnasium,#000000,#ff6000,40.3434,-74.6486,362,6854,2116
+Buffalo,Bulls,Alumni Arena,#005bbb,#ffffff,43.0019,-78.7852,362,6783,2058
+Morehead State,Eagles,Ellis Johnson Arena,#094FA3,#fed91a,38.191,-83.4339,362,6500,1293
+Villanova,Wildcats,Finneran Pavilion,#00205b,#13b5ea,40.0358,-75.3402,362,6500,7886
+South Dakota State,Jackrabbits,First Bank and Trust Arena,#0033a0,#ffd100,44.3444,-96.7982,362,6500,2808
+Eastern Kentucky,Colonels,Baptist Health Arena,#660819,#f0f0f0,37.7342,-84.3012,362,6500,1434
+UMass Lowell,River Hawks,Tsongas Center,#00529C,#cf1f2f,42.6502,-71.3133,362,6496,640
+Drake,Bulldogs,Knapp Center,#005596,#bec0c2,41.6048,-93.6523,362,6424,3429
+Kent State,Golden Flashes,Memorial Athletic and Convocation Center,#002664,#eaab00,41.1482,-81.344,362,6327,2498
+Youngstown State,Penguins,Beeghly Center,#E51935,#690717,41.1082,-80.649,362,6300,2035
+Pacific,Tigers,Alex G. Spanos Center,#F47820,#c2c3c0,37.9767,-121.3151,362,6150,1461
+East Tennessee State,Buccaneers,Freedom Hall Civic Center,#002d61,#ffc423,36.3024,-82.3693,362,6149,543
+Winthrop,Eagles,Winthrop Coliseum,#9e0b0e,#fdb41e,34.9481,-81.0149,362,6100,1572
+Sam Houston,Bearkats,Bernard Johnson Coliseum,#f56423,#ffffff,30.7129,-95.5462,362,6100,1330
+Eastern Washington,Eagles,Reese Court,#a10022,#abb4bc,47.4914,-117.5894,362,6000,1689
+South Dakota,Coyotes,Sanford Coyote Sports Center,#CD1241,#f0f0f0,42.7901,-96.9279,362,6000,1537
+The Citadel,Bulldogs,McAlister Field House,#7badd3,#002856,32.7986,-79.9625,362,6000,1328
+Northeastern,Huskies,Matthews Arena,#CC0001,#c2c3c0,42.3351,-71.0893,362,6000,1079
+Central Arkansas,Bears,Farris Center,#a7a9ac,#8e959a,35.0818,-92.4596,362,6000,1103
+Gonzaga,Bulldogs,McCarthey Athletic Center,#041e42,#c8102e,47.6654,-117.3991,362,6000,6339
+Alabama A&M,Bulldogs,Alabama A&M Events Center,#790000,#ffffff,34.7843,-86.5701,362,6000,2343
+West Georgia,Bulldogs,The Coliseum,#0033a1,#db1a21,33.5759,-85.1039,362,5953,8821
+North Florida,Ospreys,UNF Arena,#004B8D,#babcbe,30.269,-81.5097,362,5800,1451
+Maine,Black Bears,Cross Insurance Center,#127dbe,##127dbe,44.7892,-68.7792,362,5800,1178
+Navy,Midshipmen,Alumni Hall,#00225b,#b5a67c,38.9786,-76.4928,362,5710,1643
+North Carolina A&T,Aggies,Corbett Sports Center,#0505aa,#004684,36.0684,-79.8106,362,5700,1925
+Lehigh,Mountain Hawks,Stabler Arena,#6c2b2a,#b69e70,40.5853,-75.3574,362,5600,1073
+Little Rock,Trojans,Jack Stephens Center,#AD0000,#898d8f,34.7285,-92.3405,362,5600,1537
+UC Santa Barbara,Gauchos,UC Santa Barbara Events Center,#1e1840,#febc11,34.4138,-119.8513,362,5600,2653
+Air Force,Falcons,Clune Arena,#003594,#ffffff,38.9788,-104.8644,362,5508,1383
+Maryland Eastern Shore,Hawks,Hytche Athletic Center,#5c2301,#b5b7ba,38.2028,-75.692,362,5500,1384
+Akron,Zips,James A. Rhodes Arena,#041e42,#c5b783,41.0759,-81.5086,362,5500,2148
+Austin Peay,Governors,F&M Bank Arena,#8e0b0b,##8e0b0b,36.5343,-87.3543,362,5500,2172
+Georgia Southern,Eagles,Jack and Ruth Ann Hill Convocation Center,#041e42,#a3aaae,32.4214,-81.7845,362,5500,1891
+St. Bonaventure,Bonnies,Reilly Center,#70261D,##70261D,42.0805,-78.4772,362,5480,3585
+North Dakota State,Bison,Scheels Center,#01402A,#ffffff,46.8831,-96.7724,362,5460,1981
+Western Michigan,Broncos,University Arena,#532e1f,#f1c500,42.2833,-85.6086,362,5421,1652
+Eastern Illinois,Panthers,Lantz Arena,#000000,#bebab9,39.4787,-88.1791,362,5400,1127
+Southern Utah,Thunderbirds,America First Event Center,#c72026,#000000,37.6749,-113.0731,362,5300,1021
+Central Michigan,Chippewas,McGuirk Arena,#4c0027,#fbab18,43.5816,-84.7742,362,5300,1977
+Davidson,Wildcats,John M. Belk Arena,#000000,#e51837,35.4992,-80.8403,362,5223,2774
+Rice,Owls,Tudor Fieldhouse,#00205b,#c1c6c8,29.715,-95.404,362,5208,1264
+Towson,Tigers,TU Arena,#FFC229,##FFC229,39.387,-76.6186,362,5200,2447
+UNC Wilmington,,Trask Coliseum,#00665e,#ffda00,34.225,-77.8783,362,5200,5077
+Troy,Trojans,Trojan Arena,#862633,#b1b1b1,31.8023,-85.9524,362,5200,2918
+Binghamton,Bearcats,Binghamton University Events Center,#00614A,#f0f0f0,42.0898,-75.9683,362,5142,1606
+Western Illinois,Leathernecks,Western Hall,#4e1e8a,#ffc90a,40.4715,-90.6849,362,5139,556
+Hofstra,Pride,Mack Sports Complex,#003594,#ffc72c,40.7198,-73.5968,362,5124,1988
+San Diego,Toreros,Jenny Craig Pavilion,#2f99d4,#2f99d4,32.7745,-117.1837,362,5100,1281
+Charleston,Buccaneers,TD Arena,#7a2531,#9e8959,32.7855,-79.9344,362,5100,763
+Elon,Phoenix,Schar Center,#020303,#b59a57,36.1081,-79.5107,362,5100,1510
+Belmont,Bruins,Curb Event Center,#182142,#c9262d,36.1326,-86.7945,362,5085,2013
+California Baptist,Lancers,Fowler Events Center,#000080,##000080,33.9643,-117.3398,362,5050,3432
+Army,Black Knights,Christl Arena,#000000,#d3bc8d,41.3926,-73.9599,362,5043,1293
+VMI,Keydets,Cameron Hall,#ae122a,#ffd619,37.7885,-79.4366,362,5029,1844
+Lipscomb,Bisons,Allen Arena,#20366C,#f6b734,36.1038,-86.7989,362,5028,1187
+George Washington,Revolutionaries,Charles E. Smith Center,#002843,#e8d2a1,38.8978,-77.0494,362,5000,2272
+Mississippi Valley State,Delta Devils,Harrison HPER Complex,#005328,#cf2d34,33.5113,-90.3426,362,5000,406
+UMBC,Retrievers,Chesapeake Employers Insurance Arena,#000000,#ad860a,39.2524,-76.7089,362,5000,1462
+Delaware,Fightin' Blue Hens,Bob Carpenter Center,#00539f,#ffd200,39.6604,-75.7487,362,5000,1890
+Stetson,Hatters,Edmunds Center,#0a5640,#56854e,29.0395,-81.3018,362,5000,738
+FIU,Panthers,Ocean Bank Convocation Center,#091f3f,#c3993f,25.7569,-80.3798,362,5000,653
+San Jose State,Spartans,Provident Credit Union Event Center,#0038a8,#ffb81a,37.3352,-121.8812,362,5000,2143
+Valparaiso,Beacons,Athletics–Recreation Center,#794500,##794500,41.4643,-87.0483,362,5000,1440
+St. Thomas,Tommies,Lee and Penny Anderson Arena,#000000,##000000,44.9397,-93.1944,362,5000,2861
+New Haven,,Jeffery P. Hazell Athletics Center,#041e42,#ffc425,41.2909,-72.9626,362,5000,584
+UC Irvine,Anteaters,Bren Events Center,#002B5C,#fec52e,33.6495,-117.8469,362,4984,2212
+Samford,Bulldogs,Pete Hanna Center,#005485,#bc0023,33.4638,-86.7972,362,4974,1474
+Portland,Pilots,Chiles Center,#330072,#a8b3ba,45.5751,-122.7285,362,4852,1337
+Southern Indiana,Screaming Eagles,"Liberty Arena, Home of the Screaming Eagles",#85283D,#c2c3c0,37.9585,-87.6742,362,4800,1263
+Utah Tech,Trailblazers,Burns Arena,#000000,##000000,37.1015,-113.567,362,4779,2016
+Bowling Green,Falcons,Stroh Center,#fd5000,#4f2c1d,41.3753,-83.6263,362,4700,2291
+Florida Gulf Coast,Eagles,Alico Arena,#00885a,#076c3b,26.4636,-81.7747,362,4633,1684
+Kennesaw State,Owls,KSU Convocation Center,#fdbb30,#0b1315,34.0383,-84.5831,362,4600,1760
+Albany,Great Danes,Broadview Center,#3D2777,#ffffff,42.6822,-73.8283,362,4538,1990
+American,Eagles,Bender Arena,#c41130,#c8102e,38.9377,-77.0899,362,4500,1078
+Norfolk State,Spartans,Joseph G. Echols Memorial Hall,#0c8968,#fdb813,36.848,-76.2582,362,4500,2203
+High Point,Panthers,Nido & Mariana Qubein Arena and Conference Center,#330072,#ffffff,35.9721,-79.9937,362,4500,3946
+Arkansas-Pine Bluff,Razorbacks,K. L. Johnson Complex,#e0aa0f,#eaaa00,34.2511,-92.0289,362,4500,1742
+Santa Clara,Broncos,Leavey Center,#690b0b,#101010,37.3492,-121.9352,362,4500,1837
+Loyola Chicago,Ramblers,Joseph J. Gentile Arena,#9d1244,##9d1244,41.9991,-87.6573,362,4486,2628
+Cornell,Big Red,Newman Arena,#b31b1b,#ffffff,42.4529,-76.4801,362,4473,1242
+Tennessee-Martin,Volunteers,Kathleen and Tom Elam Center,#FF6700,#102a5c,36.3415,-88.8642,362,4300,1570
+Morgan State,Bears,Talmadge L. Hill Field House,#014786,#f47937,39.3447,-76.5836,362,4250,1259
+McNeese,Cowboys,Townsley Law Arena,#00529C,#ffd204,30.1751,-93.2113,362,4242,3266
+Idaho,Vandals,Idaho Central Credit Union Arena,#000000,#8c6e4a,46.7275,-117.0182,362,4200,2021
+UC San Diego,Tritons,LionTree Arena,#000000,#ffcd00,32.8795,-117.2359,362,4200,2501
+Stony Brook,Seawolves,Island Federal Credit Union Arena,#990000,##990000,40.9174,-73.126,362,4160,1800
+Monmouth,Hawks,OceanFirst Bank Center,#051844,##051844,40.2794,-74.0076,362,4100,1725
+Tulane,Green Wave,Devlin Fieldhouse,#006747,#418fde,29.9412,-90.1201,362,4100,1310
+Coppin State,Eagles,Physical Education Complex,#2e3192,#ffd204,39.3144,-76.6567,362,4100,960
+UTSA,Roadrunners,Convocation Center,#0c2340,#f15a22,29.5824,-98.6215,362,4080,902
+Prairie View A&M,Panthers,William J. Nicks Building,#582c83,#eaaa00,30.0961,-95.987,362,4000,791
+Long Beach State,Beach,LBS Financial Credit Union Pyramid,#000000,#f1f2f3,33.7818,-118.1152,362,4000,1419
+Liberty,Flames,Liberty Arena,#0a254e,#b72025,37.3493,-79.1802,362,4000,3364
+Bucknell,Bison,Sojka Pavilion,#000060,#00316e,40.9589,-76.8819,362,4000,1081
+Oakland,Golden Grizzlies,OU Credit Union O'rena,#04091c,#bc955c,42.6666,-83.2066,362,4000,2274
+Robert Morris,Colonials,UPMC Events Center,#00214D,#a21d2b,40.5203,-80.2147,362,4000,1439
+SIU Edwardsville,,Vadalabene Center,#eb1c23,#080808,38.7959,-89.9999,362,4000,1771
+Cal State Fullerton,Titans,Titan Gym,#003767,#ff8300,33.8831,-117.8852,362,4000,726
+Furman,Paladins,Timmons Arena,#582c83,#ffffff,34.9181,-82.4373,362,4000,2125
+North Alabama,Lions,Flowers Hall,#663399,##663399,34.8084,-87.6838,362,4000,2095
+Loyola Marymount,Lions,Gersten Pavilion,#880029,#00345b,33.9677,-118.4156,362,3900,788
+Northwestern State,Demons,Prather Coliseum,#492F91,#ed6118,31.744,-93.0951,362,3900,546
+Saint Joseph's,Hawks,Hagan Arena,#9e1b32,#6c6f70,39.9956,-75.2349,362,3800,2143
+Nicholls,Colonels,Stopher Gymnasium,#C41230,#f0f0f0,29.7923,-90.8013,362,3800,671
+Abilene Christian,Wildcats,Moody Coliseum,#592d82,#b1b3b3,32.4704,-99.7092,362,3600,1105
+Quinnipiac,Bobcats,M&T Bank Arena,#041B43,##041B43,41.414,-72.9112,362,3570,1424
+Holy Cross,Crusaders,Hart Center at the Luth Athletics Complex,#582c83,#ffffff,42.2367,-71.807,362,3536,1203
+Saint Mary's,Gaels,University Credit Union Pavilion,#d80024,#003057,37.841,-122.1095,362,3500,3341
+Jacksonville State,Gamecocks,Pete Mathews Coliseum,#cc0000,#000000,33.8241,-85.7735,362,3500,1295
+Saint Francis (PA),Red Flash,DeGol Arena,#a20012,#000000,40.5047,-78.6411,362,3500,663
+North Carolina Central,Eagles,McDougald–McLendon Arena,#880023,#c2c3c0,35.9732,-78.8976,362,3500,1429
+Fairfield,Stags,Leo D. Mahoney Arena,#000000,#ebebeb,41.1597,-73.2574,362,3500,2016
+Mercer,Bears,Hawkins Arena,#ff7f29,#080808,32.829,-83.6518,362,3500,1013
+Gardner–Webb,Runnin' Bulldogs,Paul Porter Arena,#c12535,#909090,35.2478,-81.6702,362,3500,611
+NJIT,Highlanders,Wellness and Events Center,#EE3024,#df3e2e,40.7423,-74.1804,362,3500,599
+Duquesne,Dukes,UPMC Cooper Fieldhouse,#002D62,#b90b2e,40.4381,-79.9897,362,3500,2260
+Mount St. Mary's,Mountaineers,Knott Arena,#005596,#ebebeb,39.6806,-77.3466,362,3500,2092
+Cal State Bakersfield,,Icardo Center,#003BAB,##003BAB,35.3476,-119.1026,362,3497,430
+Wofford,Terriers,Jerry Richardson Indoor Stadium,#533B22,#f0f0f0,34.9632,-81.9329,362,3400,1465
+North Dakota,Fighting Hawks,Betty Engelstad Sioux Center,#00A26B,#c2c3c0,47.9276,-97.0733,362,3300,1754
+Lindenwood,Lions and Lady Lions,Robert F. Hyland Performance Arena,#b5a36a,#000000,38.7875,-90.5031,362,3270,995
+Vermont,Catamounts,Patrick Gym,#154734,#ffc72c,44.4737,-73.1941,362,3228,2114
+Coastal Carolina,Chanticleers,HTC Center,#006f71,#a27752,33.7991,-79.0156,362,3212,1931
+Radford,Highlanders,Dedmon Center,#BC1515,#c2c3c0,37.1385,-80.5417,362,3205,1210
+Marist,Red Foxes,McCann Arena,#e53730,#f0f0f0,41.722,-73.9344,362,3200,1626
+South Carolina State,Bulldogs,SHM Memorial Center,#7d1315,#104897,33.4988,-80.8468,362,3200,325
+Saint Peter's,Peacocks,Run Baby Run Arena,#004CC2,##004CC2,40.7276,-74.0722,362,3200,595
+Fordham,Rams,Rose Hill Gymnasium,#830032,#909090,40.8622,-73.8839,362,3200,1257
+UNC Asheville,Bulldogs,Kimmel Arena,#003da5,#ffffff,35.618,-82.5688,362,3200,993
+UC Riverside,Highlanders,UC Riverside Student Recreation Center,#14234F,##14234F,33.9643,-117.3398,362,3168,390
+Florida Atlantic,Owls,FAU Arena,#003366,#cc0000,26.3743,-80.1027,362,3161,3161
+Pepperdine,Waves,Firestone Fieldhouse,#003A72,#dc762f,34.0385,-118.7097,362,3104,671
+Campbell,Fighting Camels,"John W. Pope, Jr. Convocation Center",#000000,##000000,35.4081,-78.7392,362,3095,1528
+Portland State,Vikings,Viking Pavilion,#00311e,#ebebeb,45.511,-122.6868,362,3094,1116
+East Texas A&M,Lions,The Field House,#000000,##000000,33.24,-95.9183,362,3055,552
+Cal Poly,Mustangs,Robert A. Mott Athletics Center,#1E4D2B,#eed897,35.3001,-120.6592,362,3032,1886
+San Francisco,Dons,The Sobrato Center,#005a36,#ffffff,37.7245,-122.48,362,3005,1937
+La Salle,Explorers,John Glaser Arena,#003356,#ffce00,39.9535,-75.1848,362,3000,1562
+Bethune-Cookman,,Moore Gymnasium,#7b1831,#e9aa12,29.2119,-81.032,362,3000,816
+Longwood,Lancers,Joan Perry Brock Center,#003273,#9ea2a3,37.309,-78.4017,362,3000,1979
+New Hampshire,Wildcats,Lundholm Gym,#004990,#c3c4c6,43.1351,-70.9462,362,3000,415
+Northern Colorado,Bears,Bank of Colorado Arena,#13558D,#ffc533,40.4029,-104.7017,362,2992,1516
+Brown,Bears,Pizzitola Sports Center,#411e09,#949300,41.8186,-71.4088,362,2800,524
+Howard,Bison,Burr Gymnasium,#003a63,#e51937,38.9263,-77.0222,362,2700,1411
+Bryant,Bulldogs,Chace Athletic Center,#000000,#9f8343,41.9221,-71.5372,362,2700,485
+Central Connecticut,Blue Devils,William H. Detrick Gymnasium,#1B49A2,#d1d5d8,41.6929,-72.7654,362,2654,1126
+Iona,Gaels,Hynes Athletic Center,#6f2c3e,#f0ab00,40.9261,-73.7858,362,2578,1929
+Yale,Bulldogs,John J. Lee Amphitheater,#004a81,#286dc0,41.3136,-72.9232,362,2532,1289
+Drexel,Dragons,Daskalakis Athletic Center,#020260,#ffd65a,39.9569,-75.1899,362,2509,1172
+Columbia,Lions,Levien Gymnasium,#7ba4db,#183863,40.8078,-73.9625,362,2500,1244
+LIU,Sharks,Steinberg Wellness Center,#69b3e7,#f2c75c,40.6906,-73.9793,362,2500,561
+Cal State Northridge,Matadors,Premier America Credit Union Arena,#b50000,##b50000,34.2455,-118.5263,362,2500,806
+UTRGV,Vaqueros,UTRGV Fieldhouse,#dc6000,#e1732d,26.3092,-98.2023,362,2500,1286
+Queens,Royals,Curry Arena,#00205b,#c4b581,35.1888,-80.8333,362,2500,505
+Denver,Pioneers,Hamilton Gymnasium,#98002e,#a8996e,39.6824,-104.9624,362,2500,1020
+Lafayette,Leopards,Kirby Sports Center,#790000,#a59474,40.7017,-75.2098,362,2453,1197
+Niagara,Purple Eagles,Gallagher Center,#69207E,#f0f0f0,43.1371,-79.0381,362,2400,862
+Manhattan,Jaspers,Draddy Gymnasium,#4f8537,#b5b7ba,40.8907,-73.9003,362,2345,866
+Presbyterian,Blue Hose,Templeton Physical Education Center,#194896,#990134,34.4628,-81.8672,362,2300,499
+Purdue Fort Wayne,Mastodons,Hilliard Gates Sports Center,#cfb991,#000000,41.1211,-85.1058,362,2300,1629
+Canisius,Golden Griffins,Koessler Athletic Center,#004a81,#dda50f,42.9209,-78.8576,362,2196,744
+Bellarmine,Knights,Knights Hall,#000000,##000000,38.2216,-85.7052,362,2196,1449
+Harvard,Crimson,Lavietes Pavilion,#990000,#dbdbdb,42.366,-71.1215,362,2195,1249
+Wagner,Seahawks,Spiro Sports Center,#00483A,#ffffff,40.615,-74.0958,362,2100,606
+Dartmouth,Big Green,Leede Arena,#005730,#000000,43.7024,-72.2892,362,2100,939
+Loyola (Maryland),Greyhounds,Reitz Arena,#76a7a0,#c9cbca,39.3484,-76.6159,362,2100,788
+Sacred Heart,Pioneers,William H. Pitt Center,#a40012,#c29472,41.2226,-73.2445,362,2062,942
+Le Moyne,,Le Moyne Events Center,#000000,##000000,43.0387,-76.073,362,2000,560
+Incarnate Word,Cardinals,McDermott Center,#000000,#080808,29.4681,-98.4693,362,2000,216
+Fairleigh Dickinson,Knights,Bogota Savings Bank Center,#72293c,#28334a,40.8981,-74.0307,362,1862,469
+Boston University,Terriers,Case Gym,#cc0000,#ffffff,42.3504,-71.1032,362,1800,867
+Delaware State,Hornets,Memorial Hall,#009cdb,#d51c28,39.1873,-75.5428,362,1800,392
+Colgate,Raiders,Cotterell Court,#821019,#ffffff,42.8154,-75.5396,362,1750,703
+Rider,Broncs,Alumni Gymnasium,#a80532,#ebebeb,40.301,-74.7374,362,1650,1091
+Stonehill,Skyhawks,Merkert Gymnasium,#000000,##000000,42.0575,-71.0789,362,1560,324
+Kansas City,Roos,Swinney Recreation Center,#004b87,#ffc72c,39.0355,-94.5788,362,1500,702
+Jacksonville,Dolphins,Swisher Gymnasium,#00523e,##00523e,30.3503,-81.605,362,1360,709
+IU Indy,Jaguars,The Jungle,#A81F30,#d59f0f,39.7748,-86.177,362,1215,1059
+Merrimack,Warriors,Hammel Court,#2f4f93,#e8c535,42.703,-71.1309,362,1200,1673
+Mercyhurst,,Mercyhurst Athletic Center,#000000,##000000,42.1039,-80.0559,362,1100,555
+Sacramento State,Hornets,Hornets Nest,#00573C,#cdb97d,38.622,-121.5193,362,1012,2758
+Houston Christian,Huskies,Sharp Gymnasium,#00539c,##00539c,29.7208,-95.3441,362,1000,707
+Seattle,Redhawks,Redhawk Center,#BF2E1A,#c2c3c0,47.6073,-122.3135,362,999,1768
+Charleston Southern,Buccaneers,Buccaneer Field House,#2e3192,#ded090,32.9808,-80.0671,362,881,763
+USC Upstate,Spartans,G. B. Hodge Center,#008545,#000000,34.9526,-81.9307,362,878,369
