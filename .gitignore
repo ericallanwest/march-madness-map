@@ -1,2 +1,5 @@
 ncaa_2026.ipynb
 ncaa_20260318.qgz
+
+# CARTO basemap key for the notebooks - never commit it
+.env
