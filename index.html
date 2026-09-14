@@ -161,8 +161,15 @@
             }
         }
 
+        // CARTO put its raster basemaps behind an API key in 2026. An unkeyed tile
+        // still loads, only with "API KEY REQUIRED" stamped across it, so the key
+        // rides on every CARTO tile URL below. A static site has nowhere else to
+        // keep it, so it is visible here by necessity.
+        // Keys are issued at https://carto.com/basemaps/apikey/
+        const CARTO_BASEMAP_KEY = 'cb1_2q3w_1_850ea6cb34eadf3aad7ff1da';
+
         // Add a clean, light basemap
-        var basemap = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        var basemap = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=' + CARTO_BASEMAP_KEY, {
             attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
             subdomains: 'abcd',
             maxZoom: 19
